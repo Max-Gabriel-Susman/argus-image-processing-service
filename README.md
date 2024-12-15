@@ -38,7 +38,7 @@ make stream
 
 ## Resources
 
-* this guide is a great resource on basically everything for this project
+* this guide is a great resource on basically everything for this project: https://github.com/orgs/ultralytics/discussions/12839
 
 Certainly! Setting up a live stream with RTMP and NGINX for your DJI drone and integrating it with your custom YOLOv8 model for real-time detection sounds like an exciting project! Here’s a brief guide to get you started:
 
