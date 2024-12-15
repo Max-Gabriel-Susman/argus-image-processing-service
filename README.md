@@ -5,12 +5,27 @@ The Argus Image Processing Service provides object detection for the Argus Strea
 ## Setup 
 
 ```
-pip install ultralytics
-pip install pyrtmp
+pip install ultralytics pyrtmp
+```
+
+MacOS: 
+```
+brew install nginx-rtmp-module
+```
+
+Ubuntu: 
+```
+sudo apt-get install libnginx-mod-rtmp
 ```
 
 ## Usage 
 
+start the service:
 ```
 python main.py
+```
+
+stream to the service: 
+```
+make stream
 ```
