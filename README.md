@@ -6,6 +6,7 @@ The Argus Image Processing Service provides object detection for the Argus Strea
 
 ```
 pip install ultralytics
+pip install pyrtmp
 ```
 
 ## Usage 
