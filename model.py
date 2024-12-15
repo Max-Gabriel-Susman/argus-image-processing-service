@@ -1,27 +1,18 @@
+import cv2
 from ultralytics import YOLO
 
-def main():
-    print("Argus Image Processing Service initializing...")
+# Load model
+model = YOLO('path/to/your/custom_model.pt')
 
-    model = YOLO("yolo11n.pt")
-
-    train_results = model.train(
-        data="coco8.yaml", 
-        epochs=100, 
-        imgsz=640,
-        device="cpu",
-    )
-
-    metrics = model.val()
-
-    results = model("path/to/image.jpg")
-    results[0].show()
-
-    path = model.export(format="onnx")
-
-    # we're gonna have to implement a server here eventually to handle requests from the stream engine
-
-    print("Argus Image Processing Service online.")
-
-if __name__ == "__main__":
-    main()
+# Capture RTMP stream
+cap = cv2.VideoCapture('rtmp://localhost/live/stream_name')
+while cap.isOpened():
+    ret, frame = cap.read()
+    if ret:
+        # Make predictions
+        results = model(frame)
+        results.show()  # Display the frame with detections
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
