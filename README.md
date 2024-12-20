@@ -74,3 +74,22 @@ Flask is a great choice for setting up a web server. You can start by creating a
 Integrate the Flask app with the detection model to display the processed frames.
 Check out the Flask documentation for basic setup and this tutorial for streaming video through Flask.
 These steps should help you set up your project. For specific issues or errors, feel free to ask for more detailed help! Good luck with your real-time detection system! 🚀
+
+# Argus Media Service
+
+The Argus Media Service manages and transcodes stream data on the Argus platform
+
+## Setup 
+
+
+## Live Stream
+
+docker-compose build 
+
+docker compose up 
+
+open OBS
+
+## Stream Key
+
+## Transcode RTMP to HLS
