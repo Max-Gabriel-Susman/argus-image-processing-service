@@ -8,6 +8,11 @@ pip install:
 ```
 pip install ultralytics pyrtmp
 ```
+pip install pybind11
+
+git clone https://github.com/pybind/scikit_build_example
+
+pip install ./scikit_build_example
 
 install nginx prerequisites
 ```
