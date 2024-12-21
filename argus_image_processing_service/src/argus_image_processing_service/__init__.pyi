@@ -2,7 +2,7 @@
 Pybind11 example plugin
 -----------------------
 
-.. currentmodule:: scikit_build_example
+.. currentmodule:: argus_image_processing_service
 
 .. autosummary::
     :toctree: _generate

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import scikit_build_example as m
+import argus_image_processing_service as m
 
 
 def test_version():

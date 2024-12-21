@@ -10,24 +10,7 @@ pip install ultralytics pyrtmp
 ```
 pip install pybind11
 
-git clone https://github.com/pybind/scikit_build_example
-
-pip install ./scikit_build_example
-
-install nginx prerequisites
-```
-brew install pcre zlib openssl
-```
-
-curl -O https://nginx.org/download/nginx-1.25.2.tar.gz
-tar -xzvf nginx-1.25.2.tar.gz
-cd nginx-1.25.2
-
-
-Ubuntu: 
-```
-sudo apt-get install libnginx-mod-rtmp
-```
+pip install ./argus_image_processing_service
 
 ## Usage 
 
