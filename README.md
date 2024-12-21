@@ -4,15 +4,42 @@ The Argus Image Processing Service provides object detection for the Argus Strea
 
 ## Setup 
 
-pip install:
-```
-pip install ultralytics pyrtmp
-```
-pip install pybind11
+Start by cloning the service repository and then installing it's dependencies
 
-pip install ./argus_image_processing_service
+cmake installation:
+<TODO: cmake installation and version reqs>
 
-## Usage 
+pip installation:
+```
+pip install ultralytics pyrtmp pybind11[global] ./argus_image_processing_service
+```
+
+## Run Service
+
+start Argus Image Processing Service:
+```
+python main.py
+```
+
+## Build RTMP Server
+
+change directory into `argus_image_processing_service` directory
+```
+cd argus_image_processing_service
+```
+
+clean your build directory: 
+```
+rm -r build
+```
+
+reconfigure and build: 
+```
+cmake -S . -B build
+cmake --build build
+```
+
+## Local Usage 
 
 start the service:
 ```
